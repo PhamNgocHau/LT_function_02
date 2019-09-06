@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayRandom = [];
+    for (var i = 0; i < 100; i++) {
+        arrayRandom[i] = Math.random().toString(36).substring(2, 3);
+    }
+    let char = prompt('Nhap char :');
+
+    function check(a) {
+        let result = 0;
+        for (let i = 0; i < arrayRandom.length; i++) {
+            if (arrayRandom[i] === a) {
+                result++;
+            }
+        }
+        if (result === 0) {
+            result = -1;
+        }
+        return result;
+    }
+
+    document.write(arrayRandom + '<br>');
+    document.write('So lan xuat hien: ' + check(char));
+</script>
+</body>
+</html>

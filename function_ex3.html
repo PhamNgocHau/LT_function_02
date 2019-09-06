@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txt">
+<button type="button" onclick="factorial()">factorial</button>
+<p id="result"></p>
+<script>
+    function factorial() {
+        var giaithua = 1;
+        var input = document.getElementById('txt').value;
+        for (var i = 1 ; i <= input ; i++){
+            giaithua = giaithua * i;
+        }
+        document.getElementById('result').innerHTML = 'factorial : ' + giaithua;
+        document.getElementById('result').style.color = 'red';
+    }
+
+</script>
+</body>
+</html>

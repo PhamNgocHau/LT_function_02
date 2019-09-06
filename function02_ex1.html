@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Number:<input type="text" id="txt" oninput="caculator()">Square: <span id="result"></span>
+<script>
+    function square(num) {
+        var result = num * num;
+        return result;
+    }
+
+    function caculator() {
+        var input = document.getElementById('txt').value;
+        var reusult = square(input);
+        document.getElementById('result').innerHTML = reusult;
+    }
+</script>
+</body>
+</html>

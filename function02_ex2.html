@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+radius: <input type="text" id="txt">
+<button type="button" onclick="acreage()">Acreage</button>
+<p id="result">Result:</p>
+<body>
+<script>
+    function acreage() {
+        let radius = document.getElementById('txt').value;
+        let Acreage = parseFloat(radius * radius * 3.14);
+        document.getElementById('result').innerHTML = 'Acreage = ' + Acreage;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var numA = parseInt(prompt('Nhap vao a: '));
+    var numB = parseInt(prompt('Nhap vao b: '));
+    var numC = parseInt(prompt('Nhap vao c: '));
+
+    function inputNumber() {
+        var minNumber = numA;
+        if (numA > numB) {
+            minNumber = numB;
+        }
+        if (numB > numC) {
+            minNumber = numC;
+        }
+        alert('min Number: ' + minNumber)
+    }
+
+    inputNumber(numA, numB, numC);
+</script>
+</body>
+</html>

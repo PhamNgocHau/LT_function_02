@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arrRandom = prompt('Nhap vao mang: ');
+
+    function reverse() {
+        var array = [];
+        for (var i = 0; i < arrRandom; i++) {
+            array.push(prompt("Nhap phan tu vao mang: "));
+        }
+        document.write('Array First: ' + array + '<br>'+ '<br>');
+        document.write('Array Reverse: ' + array.reverse('<br>'));
+    }
+    reverse();
+</script>
+</body>
+</html>
